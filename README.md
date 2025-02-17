@@ -8,5 +8,4 @@ Protocolo git
 - git commit -m "nome da alteração/descricao da alteração"
 - git push
 
--qualquer
 
