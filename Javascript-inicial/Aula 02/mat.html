@@ -9,35 +9,47 @@
 
 <body>
     <h1>Contas matemáticas</h1>
-    <section>
-        <h2>Soma</h2>
-        <label for="n1">Primeiro número:</label><br>
-        <input type="number" id="n1" placeholder="Digite o primeiro número"><br>
-        <label for="n2">Segundo número:</label><br>
-        <input type="number" id="n2" placeholder="Digite o segundo número"><br><br>
-        <button onclick="somar()">SOMAR</button><br>
-        <p>Resultado: <span id="res"></span> </p>
-    </section>
-
-    <section>
-        <h2>Subtração</h2>
-        <label for="n3">Primeiro número:</label><br>
-        <input type="number" id="n3" placeholder="Digite o primeiro número"><br>
-        <label for="n4">Segundo número:</label><br>
-        <input type="number" id="n4" placeholder="Digite o segundo número"><br><br>
-        <button onclick="sub()">SOMAR</button><br>
-        <p>Resultado: <span id="resSub"></span> </p>
-    </section>
-
-    <section>
-        <h2>Multiplicação</h2>
-
-    </section>
-
-    <section>
-        <h2>Divisão</h2>
-
-    </section>
+    <main>
+        <section>
+            <h2>Soma</h2>
+            <label for="n1">Primeiro número:</label>
+            <input type="number" id="n1" placeholder="Digite o primeiro número">
+            <label for="n2">Segundo número:</label>
+            <input type="number" id="n2" placeholder="Digite o segundo número">
+            <button onclick="somar()">SOMAR</button>
+            <p>Resultado: <span id="res"></span> </p>
+        </section>
+    
+        <section>
+            <h2>Subtração</h2>
+            <label for="n3">Primeiro número:</label>
+            <input type="number" id="n3" placeholder="Digite o primeiro número">
+            <label for="n4">Segundo número:</label>
+            <input type="number" id="n4" placeholder="Digite o segundo número">
+            <button onclick="sub()">SUBTRAIR</button>
+            <p>Resultado: <span id="resSub"></span> </p>
+        </section>
+    
+        <section>
+            <h2>Multiplicação</h2>
+            <label for="n5">Primeiro número:</label>
+            <input type="number" id="n5" placeholder="Digite o primeiro número">
+            <label for="n6">Segundo número:</label>
+            <input type="number" id="n6" placeholder="Digite o segundo número">
+            <button onclick="multi()">MULTIPLICAR</button>
+            <p>Resultado: <span id="resMulti"></span> </p>
+        </section>
+    
+        <section>
+            <h2>Divisão</h2>
+            <label for="n7">Primeiro número:</label>
+            <input type="number" id="n7" placeholder="Digite o primeiro número">
+            <label for="n8">Segundo número:</label>
+            <input type="number" id="n8" placeholder="Digite o segundo número">
+            <button onclick="div()">DIVIDIR</button>
+            <p>Resultado: <span id="resDiv"></span> </p>
+        </section>
+    </main>
     <script src="mat.js"></script>
 </body>
 
