@@ -55,6 +55,12 @@ section{
     font-family: "Sigmar", serif;
 }
 
+#s2{
+    background-image: url("./assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media (width < 1000px){
     #s1{
        padding: 80px 20px 0px 20px;
