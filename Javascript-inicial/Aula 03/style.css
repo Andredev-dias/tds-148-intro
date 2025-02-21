@@ -17,7 +17,6 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
     flex-wrap: wrap;
     gap: 2vw;
 }
@@ -56,14 +55,58 @@ section{
 }
 
 #s2{
-    background-image: url("./assets/background.jpg");
+    background-image: url("./assets/paper.jfif") ;
     background-repeat: no-repeat;
     background-size: cover;
+    color: #ffffff;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cartao{
+    background-color: #020202a9;
+    width: 16rem;
+    height:450px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap-img-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    max-height: 100px;
+  
+}
+
+.wrap-info-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+.wrap-info-card h3{
+  max-height:50px ;
+  min-height: 50px;
 }
 
 @media (width < 1000px){
     #s1{
        padding: 80px 20px 0px 20px;
+       gap: 0;
     }
     .wrap-img{
         width: 300px;
@@ -71,5 +114,10 @@ section{
     .img-s1{
         width: 300px;
         height: 300px;
+    }
+    #s2{
+        padding: 10vh 0px;
+        height: auto;
+        background-image: url("./assets/papermobile.webp") ;
     }
 }
