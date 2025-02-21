@@ -112,12 +112,78 @@
             </div>
         </section>
         <section id="s3">
-            nova sessao
+            <div class="wrap-acc">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                         Projeto 01
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Projeto feito por mim com HTML, CSS, Javascript <br> <a target="_blank" href="https://github.com/Andredev-dias/t267ladingPage">Acessar projeto no github</a></div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Projeto 02
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Projeto feito por mim com HTML, CSS, Javascript <br> <a target="_blank" href="https://github.com/Andredev-dias/t267ladingPage">Acessar projeto no github</a></div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Projeto 03
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Projeto feito por mim com HTML, CSS, Javascript <br> <a target="_blank" href="https://github.com/Andredev-dias/t267ladingPage">Acessar projeto no github</a></div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+           
         </section>
         <section id="s4">
-            nova sessao
+            <h2>Contato</h2>
+            <div class="formulario">
+                <label for="nome">Nome</label>
+                <input type="text" placeholder="Digite seu nome" id="nome">
+                <label for="assunto">Assunto</label>
+                <input type="text" placeholder="Digite o assunto" id="assunto">
+                <br>
+                <button onclick="enviar()">Enviar</button>
+            </div>
         </section>
+        <footer>
+            <a target="_blank" href="https://www.instagram.com/"><img width="30px" height="auto" src="./assets/instagram.png" alt="Instagram"></a>
+            <a target="_blank" href="https://www.facebook.com/login"><img width="30px" height="auto" src="./assets/facebook.png" alt="Facebook"></a>
+            <a target="_blank" href="https://x.com/"><img width="30px" height="auto" src="./assets/twitter.png" alt="X"></a>
+            <a target="_blank" href="https://br.linkedin.com/"><img width="30px" height="auto" src="./assets/whatsapp.png" alt="Linkedin"></a>
+        </footer>
     </main>
+
+    <script>
+        function enviar(){
+            document.getElementById("nome").style.border = "1px solid black"
+                document.getElementById("assunto").style.border = "1px solid black"
+            const nome = document.getElementById("nome").value
+            const assunto = document.getElementById("assunto").value
+           
+            if(!nome || !assunto){
+                document.getElementById("nome").style.border = "2px solid red"
+                document.getElementById("assunto").style.border = "2px solid red"
+                return
+            }
+
+            const mensagem = `Gostaria de entrar em contato!!! \n\nNome: ${nome} \nAssunto: ${assunto}`
+            const msg = encodeURIComponent(mensagem)
+            window.location.href = `https://wa.me/5541999999999?text=${msg}`
+        }
+    </script>
 </body>
 
 </html>

@@ -103,6 +103,101 @@ section{
   min-height: 50px;
 }
 
+#s3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 10vh 0px;
+    background-color: rgba(255, 255, 255, 0.971);
+}
+
+.wrap-acc{
+    width: 80%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.accordion-button{
+    background: #000000df !important;
+    color: white  !important;
+}
+
+.accordion-item{
+    background: #000000a4 !important;
+    color: white  !important;
+}
+
+#s4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding:2vh 0px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.formulario button{
+   padding: 10px;
+   border-radius: 999px;
+   width: 100%;
+   border: none;
+   background: none;
+   color: white;
+   border: 2px solid white;
+   transition: all 200ms ease-in-out;
+}
+
+.formulario button:hover{
+    color: black;
+    border: 2px solid black;
+    background: white;
+ }
+ 
+
+.formulario label{
+   text-align: left;
+   width: 100%;
+   margin-left: 40px
+ 
+ }
+
+.formulario input{
+    padding: 10px;
+    border-radius: 999px;
+    width: 100%;
+ }
+
+ footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: black;
+    min-height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 10vh;
+ }
+ footer img{
+   transition: all 500ms ease-in-out;
+ }
+ footer img:hover{
+    transform: scale(1.3) rotate(360deg); 
+ }
+
 @media (width < 1000px){
     #s1{
        padding: 80px 20px 0px 20px;
@@ -119,5 +214,8 @@ section{
         padding: 10vh 0px;
         height: auto;
         background-image: url("./assets/papermobile.webp") ;
+    }
+    .formulario{
+        width: 78%;
     }
 }
