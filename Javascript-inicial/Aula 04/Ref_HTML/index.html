@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do select nas funções</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div>
+        <input type="number" id="num1" placeholder="Número 01">
+        <input type="number" id="num2" placeholder="Número 02">
+        <select id="operador">
+            <option value="+">Adição (+)</option>
+            <option value="-">Subtração (-)</option>
+            <option value="*">Multiplicação (x)</option>
+            <option value="/">Divisão (/)</option>
+        </select>
+        <button onclick="calc()">Calcular</button>
+        <h2 id="resultado"></h2>
+    </div>
+</body>
+</html>
