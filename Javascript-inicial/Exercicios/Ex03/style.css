@@ -1,3 +1,9 @@
+:root{
+    --red: #9f1212;
+    --blue: #1c8aa6;
+    --font-color: #090909;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -6,12 +12,11 @@
 
 body{
     display: flex;
-    flex-wrap: wrap;
+    gap: 2vw;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     height: auto;
-    gap: 2vw;
     padding: 20px;
     background: linear-gradient(90deg, rgba(0,128,75,1) 0%, rgba(106,164,2,1) 100%);
 }
@@ -19,7 +24,7 @@ body{
 .card{
     width: 300px;
     height: 420px;
-    background-color: #ffffff;
+    background-color:var(--blue);
     border-radius: 15px;
     padding: 30px;
     display: flex;
