@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            height: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .s1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60vh;
+            background-image: url("./background.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        h1{
+            font-size: 5rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            text-align: center;
+            width: 90%;
+        }
+        .s2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 4vh;
+            height: 40vh;
+            background-color: rgb(177, 177, 197);
+            padding: 2vh 0px;
+        }
+        .s2 h2{
+            text-transform: uppercase;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 3px;
+            font-weight: lighter;
+        }
+        .s2 p{
+            width: 90%;
+            font-family: cursive;
+            line-height: 30px;
+            text-align: center;
+        }
+        @media (width < 700px){
+            h1{
+            font-size: 3rem;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="s1">
+        <h1>this is a banner</h1>
+    </section>
+    <section class="s2">
+        <h2>Content area</h2>
+        <p>Lorem ipsum dolor,
+            sit amet consectetur adipisicing elit.
+            Quaerat assumenda expedita a, atque corrupti,
+            odit ex eius hic, similique blanditiis cum necessitatibus.
+            Ullam sint itaque perspiciatis cum non laboriosam minima.</p>
+    </section>
+</body>
+
+</html>
